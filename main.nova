@@ -1,2 +1,19 @@
-text Hello from Nova!
-text Cloud engine test
+text Welcome to Nova Engine!
+
+# Variable example
+set x = 10
+
+# If / Else example
+if x > 5
+text X is big
+else
+text X is small
+
+# Function example
+def greet
+text Hello, Developer!
+text Have fun coding!
+end
+
+# Call function
+call greet
