@@ -1,19 +1,62 @@
-text Welcome to Nova Engine!
+# Welcome message
+text "Welcome to Nova Engine!"
 
-# Variable example
-set x = 10
+# --------------------
+# Variables & Math
+# --------------------
+set x = 5
+set y = 10
+set sum = x + y
+text "Sum of x and y is" sum
 
-# If / Else example
-if x > 5
-text X is big
+set name = "Nova"
+text "Original name:" name
+set upperName = name.upper()
+text "Uppercase:" upperName
+set lowerName = name.lower()
+text "Lowercase:" lowerName
+text "Length of name:" name.len()
+
+# --------------------
+# If/Else demo
+# --------------------
+if sum > 10
+  text "Sum is big"
 else
-text X is small
-
-# Function example
-def greet
-text Hello, Developer!
-text Have fun coding!
+  text "Sum is small"
 end
 
-# Call function
-call greet
+# --------------------
+# Loop demo
+# --------------------
+loop 3
+  text "Loop iteration"
+end
+
+# --------------------
+# Function & Return demo
+# --------------------
+func add a b
+  return a + b
+end
+
+set result = call add 7 8
+text "Function add returned:" result
+
+func greet person
+  text "Hello," person "!"
+end
+
+call greet "Developer"
+
+# --------------------
+# Nested If & Loop
+# --------------------
+set counter = 2
+loop 2
+  if counter > 0
+    text "Nested logic active! Counter:" counter
+  end
+end
+
+text "🔥 Nova demo finished!"
